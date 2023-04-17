@@ -1,38 +1,47 @@
-# House Price Prediction
+# Melanoma Detection Assignment
+Problem statement
 
-A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. For the same purpose, the company has collected a data set from the sale of houses in Australia. The data is provided in the CSV file below.
+To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 
-The company is looking at prospective properties to buy to enter the market. You are required to build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
 
 ## Table of Contents
-* [Problem Statement](#problem-statement)
+* [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
+<!-- You can include any other section that is pertinent to your problem -->
 
-## Problem statement
-The company wants to know:
-- Which variables are significant in predicting the price of a house, and
-- How well those variables describe the price of a house.
+## General Information
 
-## Technologies Used
-- Python 
-- Pandas, Numpy, Seaborn
-- Statsmodel, Scikit Learn, GridSearchCV
-- Process: Exploratory data analysis, data cleaning, data transformation, model building, hyperparameter tuning
+This is an assignment as part of UpGrad MS program in ML & AI
+
+To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
+Initially I tried without the ImageDataGenerator which created data to over fit at high ratio
 
-- Foloowing are the top features with their coefficients based on Lasso regression
-Neighborhood_NridgHt,0.602054 ; Neighborhood_NoRidge,0.595412 ; Neighborhood_StoneBr,0.330668 ; HouseStyle_1Story,0.311616; Neighborhood_Somerst,0.309355; Neighborhood_Crawfor,0.299277; GrLivArea,0.287606; Exterior2nd_ImStucc,0.223743; OverallQual,0.196574; Exterior1st_BrkFace,0.18317
+Then I introduced dropout and ImageDataGenerator which reduced the over fit
+
+At last I tried Batch Normalization and Augumentation which really helped in carry forward
+
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
-## Acknowledgements
-- This project was a part of Advanced Linear Regression Assignment by Bangalore IIITB & Liverpool John Morris University
+## Technologies Used
+-Python 
+Google Colab
+Github
 
-## Contact
-Created by Manish Tyagi
+<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
-# Surprise-Housing-Assignment
-# Surprise-Housing-Assignment
+
+
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->
